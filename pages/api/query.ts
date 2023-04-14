@@ -15,7 +15,7 @@ const handler = async (req: Request): Promise<Response> => {
     // embeddings for the query
     const query_embedding = await embeddings.embedQuery(query);
 
-    // uses query embedings to search for similar chunks in Supabase
+    // uses embedding to search for similar chunks in Supabase
     const { data, error } = await supabase.rpc("wf_search", {
       query_embedding,
       similarity_threshold: 0.8, // higher is more similar
