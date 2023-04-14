@@ -7,6 +7,6 @@
 /* Apply the custom font globally or specifically to a class */
 .custom-font {
   font-family: "Regola Neue", sans-serif;
-  font-size: 64px;
-  letter-spacing: -0.02em;
+  /* font-size: 64px;
+  letter-spacing: -0.02em; */
 }

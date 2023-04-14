@@ -24,7 +24,6 @@ export default function Home() {
 
     const results = await searchResponse.json();
     setResults(results);
-    console.log({ results });
     setLoading(false);
   };
 
@@ -38,9 +37,9 @@ export default function Home() {
         />
       </Head>
       <div className="h-64 flex items-center justify-center bg-light-blue">
-        <div className="custom-font">Webflow video search</div>
+        <div className="custom-font text-6xl">Webflow video search</div>
       </div>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center mt-8">
         <div className="w-1/2">
           <div className="relative">
             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
