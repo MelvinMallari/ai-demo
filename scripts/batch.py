@@ -7,7 +7,7 @@ STRIDE = 3
 
 def batch_segments():
     res = []
-    with open("transcriptions.json", "r", encoding="utf-8") as f:
+    with open("trancriptions.json", "r", encoding="utf-8") as f:
         transcriptions = json.load(f)
 
     for transcription in transcriptions:

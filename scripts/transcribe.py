@@ -31,7 +31,7 @@ def transcribe_audios():
     # Loop through audio files and transcribe them
     transcriptions = []
     print("Transcribing audio files...")
-    for video_details in tqdm(video_details_list[:30]):
+    for video_details in tqdm(video_details_list):
         audio_file = f"../data/mp3/{video_details['id']}_audio.mp3"
         transcription = transcribe_with_retry(audio_file)
         if transcription:
@@ -39,7 +39,7 @@ def transcribe_audios():
 
     # Save transcriptions to a JSON file
     transcription_json = json.dumps(transcriptions, indent=2)
-    with open("transcription.json", "w", encoding="utf-8") as f:
+    with open("trancriptions.json", "w", encoding="utf-8") as f:
         f.write(transcription_json)
 
 
